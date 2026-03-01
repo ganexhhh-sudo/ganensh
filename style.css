@@ -1,0 +1,143 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* dark blue */
+    color: #e5e7eb; /* light gray */
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.header {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+    background-color: #020617;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #38bdf8; /* sky blue */
+}
+
+/* ===== Sections ===== */
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+}
+
+.section p {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/* ===== Experience Card ===== */
+.card {
+    background-color: #020617;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+}
+
+/* ===== Skills ===== */
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills-list li {
+    background-color: #020617;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+    background-color: #1e293b;
+}
+
+/* ===== Contact ===== */
+#contact p {
+    margin-top: 10px;
+    font-size: 1.05rem;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #020617;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
